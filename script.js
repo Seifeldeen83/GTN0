@@ -95,7 +95,7 @@ function newGame() {
         guessSlot.innerHTML = "";
         lowOrHi.innerHTML = "";
         remaining.innerHTML = `${11 - numGuesses}  `;
-        userInput.removeAttribute("disable");
+        userInput.removeAttribute("disabled");
         startOver.removeChild(p);
         playGame = true;
     });
