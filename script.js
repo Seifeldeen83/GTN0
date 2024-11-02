@@ -81,7 +81,7 @@ function endGame () {
 
     playGame = false;
 
-    newGame()
+    newGame();
 }
 
 
