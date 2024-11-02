@@ -88,15 +88,15 @@ function endGame () {
 function newGame() {
     const newGameButton = document.querySelector("#newGame");
 
-    newGameButton.addEventListener("click" , function (){
+    newGameButton.addEventListener("click" , function () {
         randomNumber= parseInt(Math.random()*101);
         previousGuesses = [];
         numGuesses = 1;
         guessSlot.innerHTML = "";
         lowOrHi.innerHTML = "";
-        remaining.innerHTML = `${11 - numGuesses}`;
+        remaining.innerHTML = `${11 - numGuesses}  `;
         userInput.removeAttribute("disable");
-        startOver.addChild(p);
+        startOver.removeChild(p);
         playGame = true;
-    })
+    });
 }
